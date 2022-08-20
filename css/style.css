@@ -25,7 +25,7 @@ body {
 /* Large */
 @media (min-width: 1440px) {
     .container {
-        inline-size: 1300px;
+        inline-size: 1440px;
     }
 }
 /* end global rule */

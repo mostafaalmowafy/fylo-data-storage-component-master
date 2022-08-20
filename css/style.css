@@ -168,7 +168,8 @@ ul li{
         top: 125px;
     }
 }
-.gb-left span{
+.gb-left h1{
+    display: inline;
     color: black;
     font-size: 26px;
     font-weight: 800;

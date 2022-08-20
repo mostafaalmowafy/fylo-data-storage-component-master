@@ -1,0 +1,190 @@
+/* start global rule */
+body {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+/* mobile */
+@media (min-width: 375px ){
+    .container{
+        inline-size: 375px;
+    }
+}
+/* Small */
+@media (min-width: 768px ) {
+    .container {
+        inline-size: 550px;
+    
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        inline-size: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1440px) {
+    .container {
+        inline-size: 1300px;
+    }
+}
+/* end global rule */
+.container{
+    block-size: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-image: url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-color: hsl(229, 57%, 11%);
+    background-position: bottom;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+@media (max-width:375px){
+    .container{
+        background-image: url(../images/bg-mobile.png);
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+.left{
+    background-color: hsl(228, 56%, 26%);
+    padding: 30px;
+    border-radius: 10px;
+    border-top-right-radius: 90px;
+    inline-size: 250px;
+    padding-block-start: 30px;
+    top: -20px;
+    position: relative;
+}
+
+.left .logo {
+    padding-inline-start: 0px;
+    
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin-block-end: 10;
+}
+ul li{
+    display:flex ;   
+    align-items: center;
+    justify-content: center; 
+    margin-inline-end: 10px;
+    background-color:hsl(229, 57%, 11%) ;
+    border-radius: 5px;
+    inline-size: 45px;
+    block-size: 45px;
+}
+.right{
+    background-color: hsl(228, 56%, 26%);
+    padding: 20px 30px;
+    inline-size: 400px;
+    font-size: 14px;
+    color: hsl(229, 7%, 55%);
+    position: relative;
+    border-radius: 10px;
+}
+@media (max-width:375px){
+    .right{
+        background-color: hsl(228, 56%, 26%);
+        padding: 20px 30px;
+        inline-size: 250px;
+        font-size: 14px;
+        color: hsl(229, 7%, 55%);
+        position: relative;
+        border-radius: 5px;
+        
+    }
+}
+.right p{
+    color: hsl(243, 100%, 93%);
+}
+.right span{
+    color: white;
+}
+.right .progress {
+    inline-size: 100%;
+    block-size: 15px;
+    background-color: hsl(229, 57%, 17%);
+    border-radius: 20px;
+    position: relative;
+}
+.right .progress span{
+    background-color: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    background: linear-gradient(90deg, hsl(6, 100%, 80%) 0% ,hsl(335, 100%, 65%) 100%);
+    position: absolute;
+    left: 3px;
+    top: 2.5px;
+    block-size: 65%;
+    border-radius: 20px;
+}
+.right .progress span::before{
+    content: "";
+    position: absolute;
+    background-color: white;
+    inline-size: 10px;
+    block-size: 10px;
+    border-radius: 50%;
+    right: 0px;
+    top: 0px;
+}
+.right .bottom{
+    display: flex;
+    padding-block-start: 10px;
+    color: white;
+    margin-block-end: 10px;
+}
+@media (max-width:375px){
+    .right .bottom{
+        margin-block-end: 30px;
+    }
+}
+.right .bottom .start{
+    flex: 1;
+}
+.gb-left{
+    background-color: white;
+    inline-size: fit-content;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: absolute;
+    right: 30px;
+    top: -25px;
+}
+@media (max-width:375px){
+    .gb-left{
+        padding: 15px 20px;
+        border-radius: 10px;
+        position: absolute;
+        right: 95px;
+        top: 125px;
+    }
+}
+.gb-left span{
+    color: black;
+    font-size: 26px;
+    font-weight: 800;
+}
+.right::after{
+    content: "";
+    position: absolute;
+    border: solid 15px white;
+    border-color: transparent white transparent transparent ;
+    right: 30px;
+    top: 10px;
+}
+@media (max-width:375px){
+    .right::after{
+        border: none;
+    }
+}
+.attribution { font-size: 11px; text-align: center;color: black; position: absolute;bottom: 0;left: 50%; }
+.attribution a { color: hsl(228, 45%, 44%); }
